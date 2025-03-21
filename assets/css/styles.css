@@ -1,0 +1,120 @@
+/* Aplicar la fuente Google a todo el cuerpo */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif; /* Cambiar la fuente aquí */
+}
+
+/* Aplicar la fuente Google a los títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Audiowide", sans-serif; /* Cambiar la fuente aquí */
+}
+
+/* Color de fondo personalizado para la navbar */
+.navbar-custom {
+    background-color: #6d1d38; /* Color de fondo personalizado */
+}
+
+/* Aplicar la fuente al navbar-brand */
+.navbar-brand {
+    font-family: "Audiowide", sans-serif;
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto (blanco) */
+}
+
+/* Aplicar la fuente a los enlaces del menú */
+.navbar-nav .nav-link {
+    font-family: "Audiowide", sans-serif;
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto (blanco) */
+}
+
+/* Cambiar el color del enlace activo */
+.navbar-nav .nav-link.active {
+    color: #501329; /* Color del texto activo */
+}
+
+/* Cambiar el color del enlace al pasar el mouse */
+.navbar-nav .nav-link:hover {
+    color: #acacac; /* Color del texto al pasar el mouse */
+}
+
+/* Cambiar el color del botón toggler (ícono de menú en móviles) */
+.navbar-toggler {
+    border-color: #ffffff; /* Color del borde */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Cambiar el color del título <h1> en la sección de contenido principal */
+.content h1 {
+    color: #6d1d38; /* Color del título */
+}
+
+/* Estilos para el video de fondo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.video-background iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenedor para el logo */
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+/* Estilos para el logo */
+.logo-container img {
+    max-width: 300px; /* Ajusta el tamaño del logo */
+    width: 100%;
+    height: auto;
+    opacity: 0.9; /* Opacidad del logo */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Sombra elegante */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: 100vh;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #6d1d38;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    color: #cccccc;
+}

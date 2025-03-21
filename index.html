@@ -10,151 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <style>
-        /* Aplicar la fuente Google a todo el cuerpo */
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: "Montserrat", sans-serif; /* Cambiar la fuente aquí */
-        }
-
-        /* Aplicar la fuente Google a los títulos */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Audiowide", sans-serif; /* Cambiar la fuente aquí */
-        }
-
-        /* Color de fondo personalizado para la navbar */
-        .navbar-custom {
-            background-color: #6d1d38; /* Color de fondo personalizado */
-        }
-
-        /* Aplicar la fuente al navbar-brand */
-        .navbar-brand {
-            font-family: "Audiowide", sans-serif;
-            font-size: 24px; /* Tamaño de la fuente */
-            color: #ffffff; /* Color del texto (blanco) */
-        }
-
-        /* Aplicar la fuente a los enlaces del menú */
-        .navbar-nav .nav-link {
-            font-family: "Audiowide", sans-serif;
-            font-size: 18px; /* Tamaño de la fuente */
-            color: #ffffff; /* Color del texto (blanco) */
-        }
-
-        /* Cambiar el color del enlace activo */
-        .navbar-nav .nav-link.active {
-            color: #501329; /* Color del texto activo */
-        }
-
-        /* Cambiar el color del enlace al pasar el mouse */
-        .navbar-nav .nav-link:hover {
-            color: #acacac; /* Color del texto al pasar el mouse */
-        }
-
-        /* Cambiar el color del botón toggler (ícono de menú en móviles) */
-        .navbar-toggler {
-            border-color: #ffffff; /* Color del borde */
-        }
-
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
-
-        /* Cambiar el color del título <h1> en la sección de contenido principal */
-        .content h1 {
-            color: #6d1d38; /* Color del título */
-        }
-
-        /* Estilos para el video de fondo */
-        .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        .video-background iframe {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Contenedor para el logo */
-        .logo-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-            text-align: center;
-        }
-
-        /* Estilos para el logo */
-        .logo-container img {
-            max-width: 300px; /* Ajusta el tamaño del logo */
-            width: 100%;
-            height: auto;
-            opacity: 0.9; /* Opacidad del logo */
-            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Sombra elegante */
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            margin-top: 100vh;
-        }
-        .carousel-item img {
-            height: 500px;
-            object-fit: cover;
-        }
-        .carousel-caption {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #6d1d38;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        footer a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer a:hover {
-            color: #cccccc;
-        }
-    </style>
+    <!-- Estilos personalizados -->
+    <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">INSTALACIONES URRUTIA</a>
+            <a class="navbar-brand" href="index.html">INSTALACIONES URRUTIA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quiénes somos</a>
+                        <a class="nav-link" href="quienes-somos.html">Quiénes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -258,10 +138,10 @@
                 <div class="col-md-4">
                     <h5>Enlaces rápidos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Quiénes somos</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
