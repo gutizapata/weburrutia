@@ -2,55 +2,51 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: "Montserrat", sans-serif; /* Cambiar la fuente aquí */
+    font-family: "Calibri", sans-serif; /* Aplicar Calibri según manual corporativo */
 }
 
-/* Aplicar la fuente Google a los títulos */
+/* Aplicar la fuente Arial a los títulos */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Audiowide", sans-serif; /* Cambiar la fuente aquí */
+    font-family: "Arial", sans-serif; /* Aplicar Arial según manual corporativo */
 }
 
 /* Color de fondo personalizado para la navbar */
 .navbar-custom {
-    background-color: #6d1d38; /* Color de fondo personalizado */
+    background-color: #851A31; /* Color institucional */
 }
 
 /* Aplicar la fuente al navbar-brand */
 .navbar-brand {
-    font-family: "Audiowide", sans-serif;
-    font-size: 24px; /* Tamaño de la fuente */
-    color: #ffffff; /* Color del texto (blanco) */
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
 }
 
 /* Aplicar la fuente a los enlaces del menú */
 .navbar-nav .nav-link {
-    font-family: "Audiowide", sans-serif;
-    font-size: 18px; /* Tamaño de la fuente */
-    color: #ffffff; /* Color del texto (blanco) */
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 /* Cambiar el color del enlace activo */
 .navbar-nav .nav-link.active {
-    color: #501329; /* Color del texto activo */
+    color: #5B1222; /* Color más oscuro para resaltar */
 }
 
 /* Cambiar el color del enlace al pasar el mouse */
 .navbar-nav .nav-link:hover {
-    color: #acacac; /* Color del texto al pasar el mouse */
+    color: #F28E00; /* Color secundario */
 }
 
 /* Cambiar el color del botón toggler (ícono de menú en móviles) */
 .navbar-toggler {
-    border-color: #ffffff; /* Color del borde */
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border-color: #ffffff;
 }
 
 /* Cambiar el color del título <h1> en la sección de contenido principal */
 .content h1 {
-    color: #6d1d38; /* Color del título */
+    color: #851A31;
 }
 
 /* Estilos para el video de fondo */
@@ -79,39 +75,24 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-  /* Estilos específicos para el formulario manteniendo tu paleta de colores */
-  .formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
-}
-.form-label {
-    font-weight: 600;
-    color: #6d1d38;
-}
+/* Botón de formulario con color institucional */
 .btn-enviar {
-    background-color: #6d1d38;
+    background-color: #a5a5a5;
     border: none;
     padding: 10px 30px;
     font-weight: 600;
 }
 .btn-enviar:hover {
-    background-color: #501329;
-}
-.required-field::after {
-    content: " *";
-    color: red;
+    background-color: #7a7a7a;
 }
 
 /* Estilos para el logo */
 .logo-container img {
-    max-width: 300px; /* Ajusta el tamaño del logo */
+    max-width: 300px;
     width: 100%;
     height: auto;
-    opacity: 0.9; /* Opacidad del logo */
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Sombra elegante */
+    opacity: 0.9;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 .content {
@@ -130,8 +111,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     border-radius: 5px;
 }
+
+/* Estilos para el footer con color institucional */
 footer {
-    background-color: #6d1d38;
+    background-color: #851A31;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -142,5 +125,11 @@ footer a {
     margin: 0 10px;
 }
 footer a:hover {
-    color: #cccccc;
+    color: #F28E00;
+}
+
+.text-container-lista {
+    width: 50%; /* Ajusta el ancho del contenedor */
+    margin: 0; /* Centra horizontalmente */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
