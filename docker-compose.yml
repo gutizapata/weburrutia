@@ -1,19 +1,17 @@
-version: '3.8'  # Versión del esquema de Docker Compose (compatible con Docker 27.x)
-
 services:
   web:
-    image: nginx:alpine  # Usa una imagen de NGINX basada en Alpine Linux
-    container_name: mi-pagina-web  # Nombre personalizado para el contenedor
+    image: nginx:alpine
+    container_name: mi-pagina-web
     ports:
-      - "8080:80"  # Mapea el puerto 80 del contenedor al puerto 8080 de tu PC
+      - "8080:80"
     volumes:
-      - .:/usr/share/nginx/html  # Monta la carpeta actual en el contenedor
+      - .:/usr/share/nginx/html
     environment:
-      - NGINX_HOST=localhost  # Variable de entorno para NGINX (opcional)
-    restart: unless-stopped  # Reinicia el contenedor automáticamente
+      - NGINX_HOST=localhost
+    restart: unless-stopped
     networks:
-      - web-network  # Conecta el servicio a una red personalizada
+      - web-network
 
 networks:
-  web-network:  # Define una red personalizada para los servicios
+  web-network:
     driver: bridge
