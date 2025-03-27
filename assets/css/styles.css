@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Cambiar el color del enlace activo */
 .navbar-nav .nav-link.active {
-    color: #5B1222; /* Color más oscuro para resaltar */
+    color: #3e12c4; /* Color más oscuro para resaltar */
 }
 
 /* Cambiar el color del enlace al pasar el mouse */
