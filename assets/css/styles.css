@@ -2,54 +2,51 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: "Calibri", sans-serif; /* Aplicar Calibri según manual corporativo */
+    font-family: "Calibri", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Aplicar la fuente Arial a los títulos */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Arial", sans-serif; /* Aplicar Arial según manual corporativo */
+    font-family: "Arial", sans-serif;
 }
 
-/* Color de fondo personalizado para la navbar */
+/* NAVBAR (Común a todas las páginas) */
 .navbar-custom {
-    background-color: #851A31; /* Color institucional */
+    background-color: #851A31;
+    transition: background-color 0.4s ease;
 }
 
-/* Aplicar la fuente al navbar-brand */
+.navbar-scrolled {
+    background-color: rgba(133, 26, 49, 0.9) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .navbar-brand {
     font-family: "Arial", sans-serif;
     font-size: 24px;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
-/* Aplicar la fuente a los enlaces del menú */
 .navbar-nav .nav-link {
     font-family: "Arial", sans-serif;
     font-size: 18px;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
-/* Cambiar el color del enlace activo */
 .navbar-nav .nav-link.active {
-    color: #F28E00; /* Color más oscuro para resaltar */
+    color: #F28E00 !important;
 }
 
-/* Cambiar el color del enlace al pasar el mouse */
 .navbar-nav .nav-link:hover {
-    color: #F28E00; /* Color secundario */
+    color: #F28E00 !important;
 }
 
-/* Cambiar el color del botón toggler (ícono de menú en móviles) */
 .navbar-toggler {
     border-color: #ffffff;
 }
 
-/* Cambiar el color del título <h1> en la sección de contenido principal */
-.content h1 {
-    color: #851A31;
-}
-
-/* Estilos para el video de fondo */
+/* ESTILOS ESPECÍFICOS PARA INDEX.HTML (HOME) */
 .video-background {
     position: fixed;
     top: 0;
@@ -59,13 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
     overflow: hidden;
 }
+
 .video-background iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.5s ease;
 }
 
-/* Contenedor para el logo */
 .logo-container {
     position: absolute;
     top: 50%;
@@ -75,19 +73,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-/* Botón de formulario con color institucional */
-.btn-enviar {
-    background-color: #a5a5a5;
-    border: none;
-    padding: 10px 30px;
-    font-weight: 600;
-    color: white;
-}
-.btn-enviar:hover {
-    background-color: #7a7a7a;
-}
-
-/* Estilos para el logo */
 .logo-container img {
     max-width: 300px;
     width: 100%;
@@ -99,38 +84,585 @@ h1, h2, h3, h4, h5, h6 {
 .content {
     position: relative;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 20px;
     margin-top: 100vh;
 }
+
+/* Carrusel del Home */
+#carouselExample {
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 .carousel-item img {
     height: 500px;
     object-fit: cover;
 }
+
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(133, 26, 49, 0.7);
     padding: 10px;
     border-radius: 5px;
+    bottom: 20px;
 }
 
-/* Estilos para el footer con color institucional */
+/* ESTILOS PARA SERVICIOS.HTML (se mantienen los anteriores pero con selectores más específicos) */
+.servicios-page .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.servicios-page .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(133, 26, 49, 0.2);
+}
+
+.servicios-page .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicios-page .img-gallery {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.servicios-page .img-gallery:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* ESTILOS COMUNES PARA TODAS LAS PÁGINAS */
+.btn-secondary {
+    background-color: #F28E00;
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 8px 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #d17d00;
+    transform: translateY(-2px);
+}
+
 footer {
     background-color: #851A31;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
 }
+
 footer a {
     color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
+    display: inline-block;
+    margin-bottom: 8px;
 }
+
 footer a:hover {
     color: #F28E00;
 }
 
-.text-container-lista {
-    width: 50%; /* Ajusta el ancho del contenedor */
-    margin: 0; /* Centra horizontalmente */
-    text-align: left; /* Alinea el texto a la izquierda */
+footer h5 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Estilos para el modal (servicios.html) */
+.modal-content {
+    border: 2px solid #F28E00;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    font-family: "Arial", sans-serif;
+    background-color: #851A31;
+    color: white;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: #851A31;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.modal-body img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+    
+    .logo-container img {
+        max-width: 200px;
+    }
+    
+    .content {
+        padding: 20px 10px;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .servicios-page .card-img-top {
+        height: 150px;
+    }
+    
+    .btn-secondary {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-container img {
+        max-width: 150px;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 14px;
+    }
+}
+
+/* Si prefieres usar CSS en lugar de clases de Bootstrap */
+.texto-centrado {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Opcional: limita el ancho para mejor lectura */
+}
+
+/* Para el h1 */
+.texto-centrado h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+/* Para el párrafo */
+.texto-centrado p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.about-content {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.about-content h5 {
+    color: #851A31;
+    font-family: "Arial", sans-serif;
+}
+
+.text-danger {
+    color: #F28E00 !important;
+}
+
+/* Iconos */
+.fa-certificate, .fa-headset {
+    margin-top: 4px;
+}
+
+/* Estilos para las tarjetas de características */
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(133, 26, 49, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #F28E00;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(133, 26, 49, 0.15);
+}
+
+.feature-icon {
+    min-width: 50px;
+    text-align: center;
+}
+
+.text-highlight {
+    color: #F28E00;
+    font-weight: 600;
+}
+
+/* Efecto hover para íconos */
+.feature-icon i {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon i {
+    transform: scale(1.1);
+}
+
+/* Estilos para el texto hero */
+.hero-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header-line {
+    width: 50px;
+    height: 3px;
+    background-color: #F28E00;
+}
+
+.lead-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.text-highlight {
+    color: #F28E00;
+    font-weight: 600;
+}
+
+/* Tarjeta informativa */
+.info-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 500px;
+    border-top: 3px solid #851A31;
+}
+
+.services-list {
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Especialidades */
+.specialties-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.specialty-item {
+    text-align: center;
+    min-width: 120px;
+}
+
+.specialty-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.closing-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lead-text {
+        font-size: 1.3rem;
+    }
+    
+    .specialties-container {
+        gap: 15px;
+    }
+    
+    .specialty-item {
+        min-width: 100px;
+    }
+}
+
+/* Estilos para la sección Quiénes Somos */
+.about-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    color: #851A31;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #F28E00;
+}
+
+.lead-text {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.text-highlight {
+    color: #F28E00;
+    font-weight: 600;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-top: 3px solid #851A31;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(133, 26, 49, 0.1);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #F28E00;
+}
+
+.value-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 700px;
+    text-align: left;
+}
+
+.value-list li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.value-list i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem !important;
+}
+
+.btn-primary {
+    background-color: #851A31;
+    border-color: #851A31;
+    padding: 10px 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: #6e1528;
+    border-color: #6e1528;
+}
+
+/* Estilos sección Quiénes Somos */
+.about-us-intro {
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.section-header {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.section-subtitle {
+    display: block;
+    color: #F28E00;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.section-title {
+    color: #851A31;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #F28E00;
+    margin: 0 auto;
+}
+
+.lead-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.text-highlight {
+    color: #F28E00;
+    font-weight: 600;
+}
+
+/* Tarjeta de experiencia */
+.experience-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 4px solid #851A31;
+}
+
+.experience-badge {
+    background: #851A31;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.experience-badge span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.experience-badge small {
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+}
+
+.value-props {
+    list-style: none;
+    padding-left: 0;
+}
+
+.value-props li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.value-props i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Filosofía */
+.philosophy-title {
+    color: #851A31;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.philosophy-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #F28E00;
+}
+
+.philosophy-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-top: 3px solid transparent;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(133, 26, 49, 0.1);
+    border-top-color: #F28E00;
+}
+
+.philosophy-icon {
+    font-size: 2.5rem;
+    color: #F28E00;
+    margin-bottom: 20px;
+}
+
+.philosophy-card h4 {
+    color: #851A31;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Cierre */
+.closing-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: #851A31;
+    border-color: #851A31;
+    padding: 12px 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #6e1528;
+    border-color: #6e1528;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .experience-badge {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .experience-badge span {
+        font-size: 2rem;
+    }
 }

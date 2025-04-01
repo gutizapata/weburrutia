@@ -44,49 +44,103 @@
     <!-- Contenido principal -->
     <div class="container mt-5">
         <h1>Contacto</h1>
+        <br>
+        <section class="about-us-intro py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
         
-        <!-- Formulario de Contacto -->
-        <div class="formulario-contacto">
-            <form action="https://formsubmit.co/267885c5224a50fb18dc8e02bc613506" method="POST">
-                <input type="hidden" name="_next" value="https://gutizapata.github.io/weburrutia/gracias.html">
-                <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web">
-                
-                <!-- Nombre -->
-                <div class="mb-3">
-                    <label for="nombre" class="form-label required-field">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <!-- Contenido principal -->
+                        <div class="about-content">
+                            <p class="lead-text mb-4">Nuestro equipo está listo para responder tus consultas sobre instalaciones audiovisuales. Cuéntanos sobre tu proyecto y te brindaremos
+                                una respuesta rápida con asesoría experta y una cotización transparente
+                            </p>
+                        </div> 
+                    </div>
                 </div>
-                
-                <!-- Email -->
-                <div class="mb-3">
-                    <label for="email" class="form-label required-field">Correo electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+        </section>
+
+        <!-- Contenido principal mejorado -->
+    <div class="contact-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Formulario mejorado -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card p-4 p-lg-5">
+                        <form action="https://formsubmit.co/267885c5224a50fb18dc8e02bc613506" method="POST">
+                            <input type="hidden" name="_next" value="https://gutizapata.github.io/weburrutia/gracias.html">
+                            <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web">
+                            
+                            <!-- Grupo de campos -->
+                            <div class="form-group mb-4">
+                                <label for="nombre" class="form-label">
+                                    <i class="fas fa-user me-2 text-highlight"></i>Nombre completo <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-lg" id="nombre" name="nombre" required>
+                            </div>
+                            
+                            <div class="form-group mb-4">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope me-2 text-highlight"></i>Correo electrónico <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group mb-4">
+                                <label for="asunto" class="form-label">
+                                    <i class="fas fa-tag me-2 text-highlight"></i>Asunto
+                                </label>
+                                <select class="form-select form-control-lg" id="asunto" name="asunto">
+                                    <option selected>Seleccione un asunto</option>
+                                    <option value="Consulta general">Consulta general</option>
+                                    <option value="Cotización">Solicitud de cotización</option>
+                                    <option value="Soporte técnico">Soporte técnico</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group mb-4">
+                                <label for="mensaje" class="form-label">
+                                    <i class="fas fa-comment-dots me-2 text-highlight"></i>Mensaje <span class="text-danger">*</span>
+                                </label>
+                                <textarea class="form-control form-control-lg" id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-secondary">
+                                    
+                                    <i class="fas fa-paper-plane me-2"></i> Enviar Mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+               
                 
-                <!-- Asunto -->
-                <div class="mb-3">
-                    <label for="asunto" class="form-label">Asunto</label>
-                    <input type="text" class="form-control" id="asunto" name="asunto">
-                </div>
-                
-                <!-- Mensaje -->
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label required-field">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-                </div>
-                
-                <!-- Botón Enviar -->
-                <div class="text-center">
-                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-                </div>
-            </form>
+            </div>
         </div>
-        
-<!-- Separador -->
-<hr class="my-4 w-75">
+    </div>
 
 
     </div>
+
+    <section class="about-us-intro py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+    
+                    <!-- Contenido principal -->
+                    <div class="about-content">
+                        <p class="lead-text mb-4">También puedes contactarnos a través de nuestras redes sociales o llamarnos directamente. Estamos aquí para ayudarte con todas tus necesidades de instalaciones audiovisuales.</p>
+                        <p class="lead-text mb-4">Recuerda que en Instalaciones Urrutia, tu satisfacción es nuestra prioridad. Esperamos poder trabajar contigo pronto.</p>
+                        <p class="lead-text mb-4">¡Gracias por elegirnos!</p>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer (Mantenido exactamente igual) -->
     <footer>
