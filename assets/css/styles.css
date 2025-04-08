@@ -676,3 +676,41 @@ footer h5 {
         font-size: 2rem;
     }
 }
+
+/* Ajustes solo para pantallas grandes */
+@media (min-width: 992px) {
+    .about-content {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+  
+    .lead-text {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+  }
+
+  .gallery-container {
+    max-width: 900px; /* Ajusta según necesites */
+    margin: 0 auto;
+    padding: 20px;
+}
+.gallery-img {
+    width: 100%;
+    height: 180px; /* Altura fija para uniformidad */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-container {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
