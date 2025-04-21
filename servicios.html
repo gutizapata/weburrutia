@@ -66,49 +66,86 @@
 <!-- Carousel wrapper -->
 <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="carousel" data-bs-interval="5000">
 
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
-      <!-- Single item -->
-      <div class="carousel-item active">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-4">
-                      <div class="card">
-                          <img src="assets/images/LED_2.png" class="card-img-top" alt="INSTALACIONES PANTALLAS LED"/>
-                          <div class="card-body">
-                              <h5 class="card-title">PANTALLAS LED</h5>
-                              <p class="card-text">Información sin límites: pantalla LED de alta definición para publicidad, eventos y conferencias</p>
-                              <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="videowall-monitoreo">Ver detalles</button>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                      <div class="card">
-                          <img src="assets/images/REDES_2.png" class="card-img-top" alt="INSTALACIONES DE REDES, CABLEADO & RACKS"/>
-                          <div class="card-body">
-                              <h5 class="card-title">CABLEADO, REDES & RACKS</h5>
-                              <p class="card-text">Racks modulares para equipos audiovisuales, salas de reuniones ejecutivas y espacios públicos</p>
-                              <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="rack-audiovisual">Ver detalles</button>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                      <div class="card">
-                          <img src="assets/images/AUDIO_2.png" class="card-img-top" alt="Videowall publicitario"/>
-                          <div class="card-body">
-                              <h5 class="card-title">PARLANTES Y SISTEMAS DE SONIDO</h5>
-                              <p class="card-text">Sistemas de sonido optimizados para entornos comerciales y corporativos</p>
-                              <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="sistemas-sonido">Ver detalles</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+    <!-- Inner -->
+    <div class="carousel-inner py-4">
+        <!-- Single item -->
+        <div class="carousel-item active">
+            <div class="container">
+                <!-- Versión móvil (vertical) -->
+                <div class="row d-flex d-lg-none">
+                    <div class="col-12 mb-4">
+                        <div class="card h-100">
+                            <img src="assets/images/LED_2.png" class="card-img-top" alt="INSTALACIONES PANTALLAS LED"/>
+                            <div class="card-body">
+                                <h5 class="card-title">PANTALLAS LED</h5>
+                                <p class="card-text">Información sin límites: pantalla LED de alta definición para publicidad, eventos y conferencias</p>
+                                <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="videowall-monitoreo">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="col-12 mb-4">
+                        <div class="card h-100">
+                            <img src="assets/images/REDES_2.png" class="card-img-top" alt="INSTALACIONES DE REDES, CABLEADO & RACKS"/>
+                            <div class="card-body">
+                                <h5 class="card-title">CABLEADO, REDES & RACKS</h5>
+                                <p class="card-text">Racks modulares para equipos audiovisuales, salas de reuniones ejecutivas y espacios públicos</p>
+                                <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="rack-audiovisual">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <img src="assets/images/AUDIO_2.png" class="card-img-top" alt="Videowall publicitario"/>
+                            <div class="card-body">
+                                <h5 class="card-title">PARLANTES Y SISTEMAS DE SONIDO</h5>
+                                <p class="card-text">Sistemas de sonido optimizados para entornos comerciales y corporativos</p>
+                                <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="sistemas-sonido">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Versión desktop (horizontal) -->
+                <div class="row d-none d-lg-flex">
+                    <div class="col-lg-4">
+                        <div class="card h-100">
+                            <img src="assets/images/LED_2.png" class="card-img-top" alt="INSTALACIONES PANTALLAS LED"/>
+                            <div class="card-body">
+                                <h5 class="card-title">PANTALLAS LED</h5>
+                                <p class="card-text">Información sin límites: pantalla LED de alta definición para publicidad, eventos y conferencias</p>
+                                <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="videowall-monitoreo">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="col-lg-4">
+                        <div class="card h-100">
+                            <img src="assets/images/REDES_2.png" class="card-img-top" alt="INSTALACIONES DE REDES, CABLEADO & RACKS"/>
+                            <div class="card-body">
+                                <h5 class="card-title">CABLEADO, REDES & RACKS</h5>
+                                <p class="card-text">Racks modulares para equipos audiovisuales, salas de reuniones ejecutivas y espacios públicos</p>
+                                <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="rack-audiovisual">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="col-lg-4">
+                        <div class="card h-100">
+                            <img src="assets/images/AUDIO_2.png" class="card-img-top" alt="Videowall publicitario"/>
+                            <div class="card-body">
+                                <h5 class="card-title">PARLANTES Y SISTEMAS DE SONIDO</h5>
+                                <p class="card-text">Sistemas de sonido optimizados para entornos comerciales y corporativos</p>
+                                <button class="btn btn-secondary btn-ver-detalles" data-servicio-id="sistemas-sonido">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
 
         <div class="about-intro text-center mb-5">
           
